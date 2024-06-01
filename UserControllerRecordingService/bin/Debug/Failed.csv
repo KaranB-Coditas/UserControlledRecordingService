@@ -1,0 +1,3 @@
+LeadTransitId,PhoneNumber,RecordingStartTime,AgentCallTransferredTimeDifference,RecordingIntervals,FetchRecordingFromCdrToGcs,TrimUserControlledRecording
+5366052302,22919689118845,05/29/2024 5:40:10 AM,0,"[{"RecordStartTime":0,"RecordStopTime":12},{"RecordStartTime":16,"RecordStopTime":29}]",False,False
+5364605202,242919689118845,05/29/2024 5:40:10 AM,0,"[{"RecordStartTime":0,"RecordStopTime":12},{"RecordStartTime":16,"RecordStopTime":29}]",False,False

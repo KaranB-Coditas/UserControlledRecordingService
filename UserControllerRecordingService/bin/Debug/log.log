@@ -1,0 +1,426 @@
+2024-06-01 20:01:51,064 [1] INFO UserControllerRecordingService.Program - Started processing recording
+2024-06-01 20:01:51,707 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:01:53,086 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:01:53,088 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535469549","PhoneNumber":"12317237743","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:34:50","CRMType":null}  for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,562 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:32:36 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,565 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,566 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,593 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535469549 = [{"RecordStartTime":0,"RecordStopTime":92}]
+2024-06-01 20:02:36,874 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535469549 = 10
+2024-06-01 20:02:36,887 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535469549 = [{"RecordStartTime":10,"RecordStopTime":102}]
+2024-06-01 20:02:36,891 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,896 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,928 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:36,929 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535469549","RecordingIntervals":"[{\"RecordStartTime\":10,\"RecordStopTime\":102}]","PhoneNumber":"12317237743","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:34:50","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:51,815 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: c3f77ee255573eb14715c8326d31cd30;o=1
+  Date: Sat, 01 Jun 2024 14:32:51 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:51,830 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:51,833 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : e92a842a-005b-4ac6-90b7-21facefec121
+2024-06-01 20:02:51,839 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:02:51,847 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:02:51,854 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535470097","PhoneNumber":"19417371537","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:38:11","CRMType":null}  for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,062 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:33:25 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,072 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,073 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,077 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535470097 = [{"RecordStartTime":0,"RecordStopTime":285}]
+2024-06-01 20:03:26,078 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535470097 = 11
+2024-06-01 20:03:26,080 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535470097 = [{"RecordStartTime":11,"RecordStopTime":296}]
+2024-06-01 20:03:26,082 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,084 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,087 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:26,095 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535470097","RecordingIntervals":"[{\"RecordStartTime\":11,\"RecordStopTime\":296}]","PhoneNumber":"19417371537","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:38:11","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:42,075 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 0d5313a1c99e8a94a766762d0306bcf5;o=1
+  Date: Sat, 01 Jun 2024 14:33:41 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:42,090 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:42,092 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : ddc16253-cc2f-4743-b0ad-73fad7af3be1
+2024-06-01 20:03:42,095 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:03:42,096 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:03:42,099 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535470366","PhoneNumber":"16106088964","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:40:13","CRMType":null}  for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,425 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:34:12 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,428 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,429 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,431 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535470366 = [{"RecordStartTime":0,"RecordStopTime":0},{"RecordStartTime":0,"RecordStopTime":158}]
+2024-06-01 20:04:12,431 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535470366 = 14
+2024-06-01 20:04:12,432 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535470366 = [{"RecordStartTime":14,"RecordStopTime":172}]
+2024-06-01 20:04:12,434 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,439 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,449 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:12,452 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535470366","RecordingIntervals":"[{\"RecordStartTime\":14,\"RecordStopTime\":172}]","PhoneNumber":"16106088964","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:40:13","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:25,389 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 491f2ec141f7d064e3a71703ec89eee2;o=1
+  Date: Sat, 01 Jun 2024 14:34:25 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:25,401 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:25,404 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : a22cab0b-ba6a-4c6d-86b0-1d6fc482d1b5
+2024-06-01 20:04:25,408 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:25,414 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:25,417 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535470412","PhoneNumber":"19177576495","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:40:35","CRMType":null}  for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,725 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:34:54 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,728 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,729 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,733 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535470412 = [{"RecordStartTime":0,"RecordStopTime":99},{"RecordStartTime":0,"RecordStopTime":99}]
+2024-06-01 20:04:54,735 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535470412 = 11
+2024-06-01 20:04:54,736 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535470412 = [{"RecordStartTime":11,"RecordStopTime":110}]
+2024-06-01 20:04:54,740 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,747 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,749 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:04:54,751 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535470412","RecordingIntervals":"[{\"RecordStartTime\":11,\"RecordStopTime\":110}]","PhoneNumber":"19177576495","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:40:35","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:05:06,620 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 8dc3ff3ea5f9d8019e451365e91f53bc;o=1
+  Date: Sat, 01 Jun 2024 14:35:06 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:05:06,627 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:05:06,629 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 4f3621c7-32cd-490a-8d97-2c526223dcbf
+2024-06-01 20:05:06,634 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:06,636 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:06,637 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535470587","PhoneNumber":"15743613742","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:42:48","CRMType":null}  for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,554 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:35:40 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,561 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,562 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,567 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535470587 = [{"RecordStartTime":0,"RecordStopTime":309}]
+2024-06-01 20:05:40,568 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535470587 = 31
+2024-06-01 20:05:40,570 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535470587 = [{"RecordStartTime":31,"RecordStopTime":340}]
+2024-06-01 20:05:40,572 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,574 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,575 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:40,577 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535470587","RecordingIntervals":"[{\"RecordStartTime\":31,\"RecordStopTime\":340}]","PhoneNumber":"15743613742","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:42:48","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:56,002 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 53b7b3f6d8f22b2dc452d1f47937beef;o=1
+  Date: Sat, 01 Jun 2024 14:35:55 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:56,009 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:56,029 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 202bc6f0-7199-48c4-a4ad-6104926292f8
+2024-06-01 20:05:56,034 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:05:56,035 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:05:56,037 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535470810","PhoneNumber":"18138928990","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:44:33","CRMType":null}  for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,502 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:36:25 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,520 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,525 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,537 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535470810 = [{"RecordStartTime":0,"RecordStopTime":0},{"RecordStartTime":0,"RecordStopTime":101}]
+2024-06-01 20:06:25,554 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535470810 = 11
+2024-06-01 20:06:25,568 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535470810 = [{"RecordStartTime":11,"RecordStopTime":112}]
+2024-06-01 20:06:25,574 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,586 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,593 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:25,597 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535470810","RecordingIntervals":"[{\"RecordStartTime\":11,\"RecordStopTime\":112}]","PhoneNumber":"18138928990","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:44:33","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:37,960 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 6e721f78def29c109688d55ca4d76e95;o=1
+  Date: Sat, 01 Jun 2024 14:36:37 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:38,087 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:38,123 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : da407191-06fb-4ab0-9dc7-176cd43988e5
+2024-06-01 20:06:38,166 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:06:38,175 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:06:38,182 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535470839","PhoneNumber":"12693526301","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:44:48","CRMType":null}  for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,210 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:37:11 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,217 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,220 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,224 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535470839 = [{"RecordStartTime":0,"RecordStopTime":325}]
+2024-06-01 20:07:12,224 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535470839 = 11
+2024-06-01 20:07:12,226 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535470839 = [{"RecordStartTime":11,"RecordStopTime":336}]
+2024-06-01 20:07:12,228 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,229 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,231 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:12,232 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535470839","RecordingIntervals":"[{\"RecordStartTime\":11,\"RecordStopTime\":336}]","PhoneNumber":"12693526301","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:44:48","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:27,739 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: b9aa9e7d5deb8bf0bac948022db15b6c;o=1
+  Date: Sat, 01 Jun 2024 14:37:27 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:27,745 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:27,748 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 91dd7eee-019e-4cbc-8b77-a4f62115e968
+2024-06-01 20:07:27,753 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:07:27,754 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:07:27,756 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535471314","PhoneNumber":"13364422159","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:49:39","CRMType":null}  for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,246 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:38:00 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,256 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,262 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,273 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535471314 = [{"RecordStartTime":0,"RecordStopTime":288}]
+2024-06-01 20:08:01,285 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535471314 = 23
+2024-06-01 20:08:01,293 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535471314 = [{"RecordStartTime":23,"RecordStopTime":311}]
+2024-06-01 20:08:01,301 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,309 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,321 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:01,329 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535471314","RecordingIntervals":"[{\"RecordStartTime\":23,\"RecordStopTime\":311}]","PhoneNumber":"13364422159","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:49:39","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:16,478 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 1ef93c4ee0566520889dc585950f4968;o=1
+  Date: Sat, 01 Jun 2024 14:38:16 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:16,483 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:16,488 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : db56f300-f804-4dcf-8f58-89dd0c3608c7
+2024-06-01 20:08:16,493 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:16,494 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:16,500 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535471378","PhoneNumber":"18564724647","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:49:56","CRMType":null}  for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,631 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:38:46 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,636 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,638 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,640 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535471378 = [{"RecordStartTime":0,"RecordStopTime":0},{"RecordStartTime":0,"RecordStopTime":136}]
+2024-06-01 20:08:46,642 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535471378 = 18
+2024-06-01 20:08:46,644 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535471378 = [{"RecordStartTime":18,"RecordStopTime":154}]
+2024-06-01 20:08:46,646 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,648 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,650 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:46,659 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535471378","RecordingIntervals":"[{\"RecordStartTime\":18,\"RecordStopTime\":154}]","PhoneNumber":"18564724647","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:49:56","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:59,194 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: fe4432ad2b16f882303c1185924a2b41;o=1
+  Date: Sat, 01 Jun 2024 14:38:59 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:59,200 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:59,203 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 1bef96a7-8bb7-401a-874b-d80bec42d517
+2024-06-01 20:08:59,206 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:08:59,206 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:08:59,208 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535471426","PhoneNumber":"17864477735","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:50:19","CRMType":null}  for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,538 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:39:30 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,548 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,550 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,553 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535471426 = [{"RecordStartTime":0,"RecordStopTime":194}]
+2024-06-01 20:09:30,553 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535471426 = 11
+2024-06-01 20:09:30,556 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535471426 = [{"RecordStartTime":11,"RecordStopTime":205}]
+2024-06-01 20:09:30,559 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,566 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,568 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:30,569 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535471426","RecordingIntervals":"[{\"RecordStartTime\":11,\"RecordStopTime\":205}]","PhoneNumber":"17864477735","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:50:19","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:44,574 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 71f560ee04ebe8539bd3bfa6299909a6;o=1
+  Date: Sat, 01 Jun 2024 14:39:44 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:44,580 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:44,581 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 377b8784-d8aa-4fcc-8b35-6554aa2a0090
+2024-06-01 20:09:44,584 [1] INFO UserControllerRecordingService.Program - Successfully all recording processed and trimmed!!!
+2024-06-01 20:09:44,589 [1] INFO UserControllerRecordingService.Program - End of processing recording
+2024-06-01 20:28:26,158 [1] INFO UserControllerRecordingService.Program - Started processing recording
+2024-06-01 20:29:13,094 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:29:13,938 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:29:13,940 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535471314","PhoneNumber":"13364422159","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:49:39","CRMType":null}  for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:29:54,906 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 14:59:54 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:29:54,912 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:29:54,912 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:30:49,148 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535471314 = [{"RecordStartTime":0,"RecordStopTime":288}]
+2024-06-01 20:31:14,813 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535471314 = 23
+2024-06-01 20:31:29,340 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535471314 = [{"RecordStartTime":23,"RecordStopTime":311}]
+2024-06-01 20:31:42,575 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:42,578 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:42,592 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:42,592 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535471314","RecordingIntervals":"[{\"RecordStartTime\":23,\"RecordStopTime\":311}]","PhoneNumber":"13364422159","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:49:39","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:58,085 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: daad5e8725609bdcbf946dde53d333f0;o=1
+  Date: Sat, 01 Jun 2024 15:01:57 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:58,093 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:58,094 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 468c2abf-9af1-4072-a779-bbbe6756a6b3
+2024-06-01 20:31:58,097 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to recording API in SendHttpRequestPostAsync method for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:31:58,098 [1] INFO UserControllerRecordingService.ProcessRecording - Http Recording API Url:https://recording-api.connectandsell.com/api/v1/recordings/persistent  for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:31:58,100 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute Recording API with request: {"LeadTransitId":"535471378","PhoneNumber":"18564724647","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23","RecordingStartTime":"2024-05-23T12:49:56","CRMType":null}  for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:25,998 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  transfer-encoding: chunked
+  Date: Sat, 01 Jun 2024 15:02:25 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Type: application/json; charset=utf-8; ver=1
+}  for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:26,002 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API StatusCode : OK for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:26,003 [1] INFO UserControllerRecordingService.ProcessRecording - Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:30,059 [1] INFO UserControllerRecordingService.ProcessRecording - Intervals for leadtransitId: 535471378 = [{"RecordStartTime":0,"RecordStopTime":0},{"RecordStartTime":0,"RecordStopTime":136}]
+2024-06-01 20:32:30,059 [1] INFO UserControllerRecordingService.ProcessRecording - User control Transferred Time Difference for leadtransitId: 535471378 = 18
+2024-06-01 20:32:30,066 [1] INFO UserControllerRecordingService.ProcessRecording - User control request after filtering for leadtransitId: 535471378 = [{"RecordStartTime":18,"RecordStopTime":154}]
+2024-06-01 20:32:30,071 [1] INFO UserControllerRecordingService.ProcessRecording - Sending Http call to user controlled recording API in SendHttpRequestPostAsync method for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:30,073 [1] INFO UserControllerRecordingService.ProcessRecording - request object: UserControllerRecordingService.Model.ProcessUserControlRecordingRequest for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:30,075 [1] INFO UserControllerRecordingService.ProcessRecording - Http User Control Recording API Url: https://recording-api.connectandsell.com/api/v1/recordings/intervals for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:30,077 [1] INFO UserControllerRecordingService.ProcessRecording - Http PostAsync call to execute User Control Recording API with request: {"LeadTransitId":"535471378","RecordingIntervals":"[{\"RecordStartTime\":18,\"RecordStopTime\":154}]","PhoneNumber":"18564724647","AddPauseAnnouncement":false,"RecordingStartTime":"2024-05-23T12:49:56","DestinationBucketPath":"cas-mp3-recording/PROD15/Recordings/2024/5/23"} for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:42,591 [1] INFO UserControllerRecordingService.ProcessRecording - Http Response : StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  api-supported-versions: 1.0
+  x-cloud-trace-context: 0ef8c4fddb7a0c7cecd4512a9fd1b6f2;o=1
+  Date: Sat, 01 Jun 2024 15:02:42 GMT
+  Server: Google
+  Server: Frontend
+  Via: 1.1 google
+  Content-Length: 0
+  Content-Type: text/html
+} for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:42,600 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API StatusCode : OK for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:42,602 [1] INFO UserControllerRecordingService.ProcessRecording - User Control Recording API Response : System.Threading.Tasks.Task`1[System.String] for correlationId : 328b90fb-1c4a-4602-9393-e3725b9105d6
+2024-06-01 20:32:42,605 [1] INFO UserControllerRecordingService.Program - Successfully all recording processed and trimmed!!!
+2024-06-01 20:32:42,614 [1] INFO UserControllerRecordingService.Program - End of processing recording

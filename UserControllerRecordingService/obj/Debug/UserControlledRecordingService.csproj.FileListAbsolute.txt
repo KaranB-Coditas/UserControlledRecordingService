@@ -1,0 +1,13 @@
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\log4net.config
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\UserControllerRecordingService.exe.config
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\UserControllerRecordingService.exe
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\UserControllerRecordingService.pdb
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\log4net.dll
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\log4net.xml
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\obj\Debug\UserControlledRecordingService.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\obj\Debug\UserControlledRecordingService.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\obj\Debug\UserControlledRecordingService.csproj.CopyComplete
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\obj\Debug\UserControllerRecordingService.exe
+C:\Users\Coditas\source\repos\UserControllerRecordingService\UserControllerRecordingService\obj\Debug\UserControllerRecordingService.pdb
